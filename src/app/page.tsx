@@ -1,5 +1,5 @@
+import Header from "@/components/Header";
 import Note from "@/components/Note";
-import Header from "@/components/header";
 import db from "@/db";
 import { notes } from "@/db/schemas/notes";
 import { getUser } from "@/lib/auth";

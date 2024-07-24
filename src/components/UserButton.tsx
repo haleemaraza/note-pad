@@ -7,12 +7,13 @@ import {
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
+  DropdownMenuShortcut,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
 import { User } from "@supabase/supabase-js";
 import toast from "react-hot-toast";
-import { signOutAction } from "@/actions/user";
+import { signOutAction } from "@/actions/users";
 import { useRouter } from "next/navigation";
 
 type Props = {
@@ -42,7 +43,7 @@ export function UserButton({ user, className }: Props) {
       </DropdownMenuTrigger>
 
       <DropdownMenuContent className="ml-4 mt-5 sm:mt-4">
-        {/* <DropdownMenuLabel>{user.email}</DropdownMenuLabel> */}
+        <DropdownMenuLabel>{user.email}</DropdownMenuLabel>
 
         <DropdownMenuSeparator />
 
@@ -54,4 +55,4 @@ export function UserButton({ user, className }: Props) {
   );
 }
 
-export default UserButton
+export default UserButton;
