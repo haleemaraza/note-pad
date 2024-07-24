@@ -63,7 +63,7 @@ function LoginPage() {
           <Button disabled={isPending}>Login</Button>
 
           <p className="mt-3 text-center text-xs">
-            Don't have an account?
+            Do not have an account?
             <Link
               href="/create-account"
               className="hover:text-primary ml-2 underline transition-colors duration-200 ease-in-out"
